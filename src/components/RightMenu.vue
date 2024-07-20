@@ -1,7 +1,7 @@
 <template>
   <div class="menus">
-    <button class="btn btn-danger"> HIRE ME ! </button>
-    <button class="btn btn-danger"> Portfolio</button>
+    <button class="mx-3"> HIRE ME ! </button> 
+    <button class="mx-3"> Portfolio</button>
   </div>
 </template>
 
@@ -13,20 +13,34 @@
 
   .menus {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-     flex-direction: column;
-    border:1px solid  yellow;
+    
   }
 
   .menus button {
     display: block;
-    margin: 5px 0 0px 0;
     white-space: nowrap;
     width: 180px;
     height: 50px;
+    background: transparent;
+    border: 2px solid #d3d3d3;
+    color: #EEEEEE;
+    border-radius: 10px;
+    font-family: Tw Cen MT;
+  }
+  
+  .menus button:hover {
+    display: block;
+    white-space: nowrap;
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    color: #d3d3d3;
   }
 
 </style>

@@ -1,17 +1,23 @@
 <template>
 
-    <div>
-        <div class="container container-skill">
-
+    <div class="main">
+        <div class="container-skill container">
+        
             <h1 class="skills">Skills</h1>
             <h3 class="skills-title"> Programming </h3>
+
             <div class="programming-table">
                 <table class="table table-bordered  table-hover">
                     <thead>
-                        <th>HTML</th>
-                        <th>JavaScript</th>
-                        <th>Native PHP</th>
+                        <th>Front End</th>
+                        <th>Scripting</th>
+                        <th>Server Side / Database</th>
                     </thead>
+                    <tr>
+                        <td>HTML</td>
+                        <td>JavaScript</td>
+                        <td>Native PHP</td>
+                    </tr>
                     <tr>
                         <td>CSS</td>
                         <td>JQuery</td>
@@ -25,17 +31,17 @@
                     <tr>
                         <td>W3css</td>
                         <td>Axios</td>
-                        <td>VueJs</td>
-                    </tr>
-                    <tr>
-                        <td>MySQL</td>
                         <td>MSSQL</td>
-                        <td>Oracle</td>
                     </tr>
                     <tr>
-                        <td>API Integration</td>
+                        <td>VueJs</td>
+                        <td></td>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td></td>
+                        <td>Oracle</td>
                     </tr>
                 </table>
             </div>
@@ -80,32 +86,59 @@
 
 </template>
 <script setup>
-import imageSrc from '@/assets/imgs/solomak.jpg';
+
 
 
 
 </script>
 
 <style scoped>
-    .grad {
-        width: 80%;
+    /* .main {
+        background-attachment: fixed;
+        background-image: url('@/assets/imgs/skills-bg2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } */
+    .programming {
+        color: #eee;
+        text-align: left;
     }
     .container-skill {
-        
         text-align: center;
-        border:1px solid  yellow;
+       /* background-color: rgba(255, 255, 255, 0.8); */
         padding: 50px 0 30px 0;
     }
     .skills {
-        padding: 5px 0 10px 0;
+        padding: 5px 0 40px 0;
+        font-weight: bold;
+        font-family:'Franklin Gothic Medium';
+        color: #bbbbbb;
+        font-size: 3rem; 
+    }
+    table {
+        border: #353535;
+    }
+    table thead th {
+        background-color: #bbbbbb;
+        color: rgb(90, 90, 90);
+        font-weight: bold;
+    }
+    table tr td {
+        background-color: transparent;
+        color: #eee;
     }
     .programming-table,
     .tools-table,
     .others-table {
-        padding: 0 10% 0 10%;
+        
     }
     .skills-title {
         padding: 20px 0 15px 0;
+        font-size: 2rem;
+        font-weight: bold; 
+        color: #C73659; 
+        font-family: 'Gill Sans MT';
     }
     
 </style>

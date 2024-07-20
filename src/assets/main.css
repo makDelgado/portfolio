@@ -1,7 +1,7 @@
 @import './base.css';
 body {
-  
-  background: linear-gradient(to right, rgb(241, 19, 19), rgb(34, 34, 34));
+  background-color: blue;
+  background: linear-gradient(to right, #252525, #252525);
 }
 /* 
 #app {
